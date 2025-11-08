@@ -2,11 +2,28 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Windows 64비트 설치파일 - arinomama</title>
+  <title>자주 묻는 질문 - arinomama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Windows 64비트 설치파일</h1>
-  <p>아래 버튼을 클릭하여 설치파일을 다운로드하세요.</p>
-  <a href="files/arinomama_win64_setup.exe" download>다운로드 시작</a>
+  <div id="header-container"></div>
+
+  <main>
+    <h2>자주 묻는 질문</h2>
+    <p>arinomama 사용 중 자주 묻는 질문들을 정리했습니다.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 arinomama - 빠르고 간편한 파일 검색
+  </footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+      });
+  </script>
 </body>
 </html>

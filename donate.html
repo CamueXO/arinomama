@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><title>기부 - arinomama</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>기부 - arinomama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <h1>기부</h1>
-  <p>arinomama 개발을 응원하고 싶다면 기부를 고려해주세요.</p>
+  <div id="header-container"></div>
+
+  <main>
+    <h2>기부</h2>
+    <p>arinomama 개발을 응원하고 싶다면 기부를 고려해주세요.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 arinomama - 빠르고 간편한 파일 검색
+  </footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+      });
+  </script>
 </body>
 </html>

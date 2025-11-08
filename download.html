@@ -3,13 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>다운로드 - arinomama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>다운로드</h1>
-  <ul>
-    <li><a href="download-win32.html">Windows 32비트 설치파일</a></li>
-    <li><a href="download-win64.html">Windows 64비트 설치파일</a></li>
-    <li><a href="download-arm64.html">Windows ARM64 설치파일</a></li>
-  </ul>
+  <div id="header-container"></div>
+
+  <main>
+    <h2>다운로드</h2>
+    <p>아래에서 운영체제에 맞는 설치파일을 선택하여 다운로드하세요.</p>
+    <ul>
+      <li><a href="download-win32.html">Windows 32비트 설치파일</a></li>
+      <li><a href="download-win64.html">Windows 64비트 설치파일</a></li>
+      <li><a href="download-arm64.html">Windows ARM64 설치파일</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 arinomama - 빠르고 간편한 파일 검색
+  </footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+      });
+  </script>
 </body>
 </html>

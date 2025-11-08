@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head><meta charset="UTF-8"><title>연락처 - arinomama</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>연락처 - arinomama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <h1>연락처</h1>
-  <p>문의사항은 아래 이메일로 보내주세요: support@arinomama.com</p>
+  <div id="header-container"></div>
+
+  <main>
+    <h2>연락처</h2>
+    <p>문의사항은 support@arinomama.com 으로 보내주세요.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 arinomama - 빠르고 간편한 파일 검색
+  </footer>
+
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('header-container').innerHTML = html;
+      });
+  </script>
 </body>
 </html>
