@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ありのまま - ARINOMAMA</title>
+  <title>arinomama</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fff8f0;
-      color: #333;
-      text-align: center;
-      padding: 5vw;
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    h1 {
-      font-size: 16vw; /* 기존 8vw → 16vw */
-      color: #ff7f50;
-      margin-bottom: 5vw;
+    header img {
+      height: 50px;
+      margin-right: 15px;
     }
-    p {
-      font-size: 10vw; /* 기존 5vw → 10vw */
-      margin: 4vw 0;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10vw; /* 기존 5vw → 10vw */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      margin: 5vw 0;
-    }
-    footer {
-      margin-top: 10vw;
-      font-size: 8vw; /* 기존 4vw → 8vw */
-      color: #888;
-    }
+    nav { background-color: #444; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 20px; }
+    .downloads { margin-top: 30px; }
+    .downloads h2 { margin-bottom: 10px; }
+    .downloads ul { list-style: none; padding: 0; }
+    .downloads li { margin-bottom: 10px; }
+    footer { background-color: #eee; text-align: center; padding: 15px; margin-top: 40px; font-size: 0.9em; }
   </style>
 </head>
 <body>
-  <h1>ありのまま</h1>
-  <p>아리의 엄마가 전하는, 있는 그대로의 따뜻한 이야기</p>
-  <img src="arinomama_logo.png" alt="귀여운 고양이 아리">
-  <p>이 사이트는 고양이 아리와 함께하는 일상, 그리고 '있는 그대로'의 삶을 담고 있어요.</p>
+  <header>
+    <img src="arinomama_logo.png" alt="arinomama 로고">
+    <div>
+      <h1>arinomama</h1>
+      <p>빠르고 간편한 파일 검색 도구</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">홈</a>
+    <a href="#">다운로드</a>
+    <a href="#">자주 묻는 질문</a>
+    <a href="#">도움말</a>
+    <a href="#">포럼</a>
+    <a href="#">기부</a>
+    <a href="#">연락처</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>arinomama 소개</h2>
+      <p>arinomama는 실시간으로 파일과 폴더를 빠르게 검색할 수 있는 도구입니다. 간단한 UI와 빠른 성능으로 누구나 쉽게 사용할 수 있습니다.</p>
+    </section>
+
+    <section class="downloads">
+      <h2>다운로드</h2>
+      <ul>
+        <li><a href="#">Windows 32비트 설치파일</a></li>
+        <li><a href="#">Windows 64비트 설치파일</a></li>
+        <li><a href="#">32비트 휴대용 압축파일</a></li>
+        <li><a href="#">64비트 휴대용 압축파일</a></li>
+      </ul>
+    </section>
+  </main>
+
   <footer>
-    &copy; 2025 arinomam | Made with 🧡 by ari no mama
+    &copy; 2025 arinomama - <a href="#">개인정보 보호</a>
   </footer>
 </body>
 </html>
