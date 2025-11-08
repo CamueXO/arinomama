@@ -3,59 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <title>arinomama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #ffffff;
+      color: #333;
     }
+
     header {
-      background-color: #333;
-      color: white;
+      background-color: #f5f5f5; /* 밝은 배경 */
+      color: #333;
       padding: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
     }
+
     header img {
-      height: 100px; /* 로고 크기 두 배로 확대 */
+      height: 100px;
       margin-right: 15px;
     }
+
+    header div h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header div p {
+      margin: 5px 0 0;
+      font-size: 1em;
+    }
+
     nav {
-      background-color: #444;
+      background-color: #e0e0e0;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #333;
+      margin: 0 10px;
       text-decoration: none;
+      font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     main {
       padding: 20px;
     }
+
     .downloads {
       margin-top: 30px;
     }
+
     .downloads h2 {
       margin-bottom: 10px;
     }
+
     .downloads ul {
       list-style: none;
       padding: 0;
     }
+
     .downloads li {
       margin-bottom: 10px;
     }
+
     footer {
-      background-color: #eee;
+      background-color: #f0f0f0;
       text-align: center;
       padding: 15px;
       margin-top: 40px;
       font-size: 0.9em;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header img {
+        margin: 0 0 10px 0;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+
+      main {
+        padding: 15px;
+      }
     }
   </style>
 </head>
@@ -81,7 +129,7 @@
   <main>
     <section>
       <h2>arinomama 소개</h2>
-      <p>arinomama는 실시간으로 파일과 폴더를 빠르게 검색할 수 있는 도구입니다. 간단한 UI와 빠른 성능으로 누구나 쉽게 사용할 수 있습니다.</p>
+      <p>arinomama는 실시간으로 파일의 목록을 빠르게 검색할 수 있는 도구입니다. 간단한 UI와 빠른 성능으로 누구나 쉽게 사용할 수 있습니다.</p>
     </section>
 
     <section class="downloads">
@@ -89,14 +137,13 @@
       <ul>
         <li><a href="#">Windows 32비트 설치파일</a></li>
         <li><a href="#">Windows 64비트 설치파일</a></li>
-        <li><a href="#">32비트 휴대용 압축파일</a></li>
-        <li><a href="#">64비트 휴대용 압축파일</a></li>
+        <li><a href="#">Windows ARM64 설치파일</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 arinomama - <a href="#">개인정보 보호</a>
+    &copy; 2025 arinomama - 빠르고 간편한 파일 검색
   </footer>
 </body>
 </html>
